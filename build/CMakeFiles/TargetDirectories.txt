@@ -1,0 +1,3 @@
+/home/carmate/workspace/udacity/project1/build/CMakeFiles/rebuild_cache.dir
+/home/carmate/workspace/udacity/project1/build/CMakeFiles/welcome.dir
+/home/carmate/workspace/udacity/project1/build/CMakeFiles/edit_cache.dir
