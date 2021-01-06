@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='myworld'>
-    <link name='link_0'>
+  <model name='office'>
+    <link name='link_1'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -12,9 +12,9 @@
           <iyz>0</iyz>
           <izz>0.166667</izz>
         </inertia>
-        <pose frame=''>0 0 0.2 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose frame=''>0.946542 -1.8689 0.5 0 -0 0</pose>
+      <pose frame=''>-0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -99,7 +99,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_1'>
+    <link name='link_3'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -112,7 +112,7 @@
         </inertia>
         <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose frame=''>0.946542 -2.41892 0.439986 1.5707 -0 0</pose>
+      <pose frame=''>-0 -0.550019 0 1.5707 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -199,7 +199,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_2'>
+    <link name='link_3_clone'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -212,7 +212,7 @@
         </inertia>
         <pose frame=''>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose frame=''>0.896542 -1.22888 0.439986 1.5707 -0 0</pose>
+      <pose frame=''>-0 0.550019 0 1.5707 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -299,9 +299,9 @@
         </surface>
       </collision>
     </link>
-    <joint name='link_0_JOINT_0' type='revolute'>
-      <parent>link_0</parent>
-      <child>link_1</child>
+    <joint name='link_1_JOINT_0' type='revolute'>
+      <parent>link_1</parent>
+      <child>link_3</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
@@ -331,9 +331,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_0_JOINT_1' type='revolute'>
-      <parent>link_0</parent>
-      <child>link_2</child>
+    <joint name='link_1_JOINT_1' type='revolute'>
+      <parent>link_1</parent>
+      <child>link_3_clone</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
